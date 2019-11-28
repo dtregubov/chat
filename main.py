@@ -5,7 +5,7 @@ from config import Configuration  # import our configuration file
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'vnkdjnfjknfl1232#'
-app.config.from_object(Configuration)
+#app.config.from_object(Configuration)  # commented for cases when we want to use it with ngrok
 socketio = SocketIO(app)
 
 
